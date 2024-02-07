@@ -47,6 +47,8 @@ class App {
   private initializeRoutes() {
     const apiRoutes = new ApiRoutes();
     this.app.use('/api', apiRoutes.router);
+
+    cacheService.populateCacheData();
   }
 
   public listen() {

@@ -4,7 +4,7 @@
     "name": "homeAssignment"
   },
   "usersApi": {
-    "baseUrl": "https://reqres.in/"
+    "baseUrl": "https://reqres.in/api/users"
   },
   "secretKey": "ZHNlY3JldEtleXNlY3JldEtleXNlY3JldEtleXNkYXNkYXNkYXNkYXNkYXMKRFNGU0RGU0RBQUFhc2RhU0RhZEFEQWRhRFdXV1dXdw=="
 }

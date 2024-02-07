@@ -39,7 +39,7 @@ export class UserController {
       const userId = await this.userService.deleteUser(req.params.id);
       res.send(userId);
     } catch (err) {
-      res.send(err).status(404);
+      res.status(404).send(err);
     }
   }
 
@@ -50,7 +50,7 @@ export class UserController {
       const user = await this.userService.getUserById(req.params.id);
       res.send(user);
     } catch (err) {
-      res.send(err).status(404);
+      res.status(404).send(err);
     }
   }
 
@@ -62,7 +62,7 @@ export class UserController {
       const users = await this.userService.getUsers(Number(req.params.page));
       res.send(users);
     } catch (err) {
-      res.send(err).status(404);
+      res.status(404).send(err);
     }
   }
 
@@ -81,7 +81,7 @@ export class UserController {
       );
       res.send(users);
     } catch (err) {
-      res.send(err).status(404);
+      res.status(404).send(err);
     }
   }
 
@@ -94,7 +94,7 @@ export class UserController {
       if (!token) throw new Error('user was not found');
       res.send(token);
     } catch (err) {
-      res.send(err).status(404);
+      res.status(404).send(err);
     }
   }
 }
