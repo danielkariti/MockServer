@@ -36,4 +36,5 @@ export function validate(
 
   req.user = loggedInUser;
   next();
+  return;
 }

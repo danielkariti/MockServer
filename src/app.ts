@@ -1,16 +1,15 @@
 import express from 'express';
 import * as bodyParser from 'body-parser';
 const config = require(`../config/default`);
-import { connect, Mongoose } from 'mongoose';
 
 import ApiRoutes from './api/routes/routes';
 import cors from 'cors';
+import { cacheService } from './services/cache.service';
 require('dotenv').config();
 
 class App {
   public app: express.Application;
   public port: number;
-  public mongoos: Mongoose | undefined;
 
   constructor(port: any) {
     this.app = express();
