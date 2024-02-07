@@ -1,0 +1,10 @@
+{
+  "mongo": {
+    "connectionString": "homeAssignment",
+    "name": "homeAssignment"
+  },
+  "usersApi": {
+    "baseUrl": "https://reqres.in/"
+  },
+  "secretKey": "ZHNlY3JldEtleXNlY3JldEtleXNlY3JldEtleXNkYXNkYXNkYXNkYXNkYXMKRFNGU0RGU0RBQUFhc2RhU0RhZEFEQWRhRFdXV1dXdw=="
+}
